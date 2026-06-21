@@ -1,4 +1,3 @@
-Project url = <https://github.com/har8hit/Expense-Tracker.git> .
 # Expense Tracker
 Expense Tracker is a CLI application to keep records of expenses.
 
@@ -113,3 +112,6 @@ Open records as a `.csv` file directly, without exporting to a specific location
 <img width="963" height="33" alt="Example of using the open-csv command" src="https://github.com/user-attachments/assets/2f50763f-b699-459a-b55e-a620e7713e35" />
 
 <img width="703" height="500" alt="CSV file opened showing expense records" src="https://github.com/user-attachments/assets/26de5613-2656-487d-a35b-3a2199fe16c1" />
+
+### Project URL
+url = <https://roadmap.sh/projects/expense-tracker> .
