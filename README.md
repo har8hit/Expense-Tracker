@@ -17,6 +17,9 @@ Expense Tracker is a CLI application to keep records of expenses.
 ## How to Use
 
 1. Clone `Expense-Tracker.py` to your system.
+   ```bash
+   gh repo clone har8hit/Expense-Tracker
+   ```
 2. Use Typer commands to run the commands listed below.
 
 ## Command Syntax
