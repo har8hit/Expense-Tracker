@@ -1,64 +1,107 @@
-# Expense-Tracker
-Expense Tracker is an CLI application to keep records of expenses.
+# Expense Tracker
 
-Programming Language  :  Python
-Module used  :  Typer,tempfile,os,shutil,date,etc
+Expense Tracker is a CLI application to keep records of expenses.
 
-#Required  :
+- **Programming Language:** Python
+- **Modules used:** Typer, tempfile, os, shutil, date, etc.
+
+## Requirements
+
 1. Python must be installed.
-2. Typer module also installed.
-  --> If typer module was not installed the open any terminal and use command - pip install typer .
+2. The Typer module must be installed.
+   - If Typer is not installed, open any terminal and run:
+     ```bash
+     pip install typer
+     ```
 
-#How to Use :
-Step 1  :  Clone the Expense-Tracker.py to your system
-step 2  :  Use Typer commands to run commands as given below.
+## How to Use
 
+1. Clone `Expense-Tracker.py` to your system.
+2. Use Typer commands to run the commands listed below.
 
-#Commands  :
-Usage  :  typer [Module_or_Path] run [command] [argument].......
-[Module_or_Path]  :  Expense-Tracker.py
---help : Can use after module or after command to get requird helps.
-getting help of the commands.
+## Command Syntax
 
-<img width="957" height="343" alt="image" src="https://github.com/user-attachments/assets/64d3da3d-61ce-47a5-af08-70ef50a66762" />
+```bash
+typer [Module_or_Path] run [command] [argument]...
+```
 
-getting help of the arguments for add command.
+- **`[Module_or_Path]`** — `Expense-Tracker.py`
+- **`--help`** — Can be used after the module or after a command to get the required help.
 
-<img width="962" height="192" alt="image" src="https://github.com/user-attachments/assets/a86e6ec3-46d4-4e14-806d-939b4e54c918" />
+### Getting help on the available commands
 
+<img width="957" height="343" alt="Help output listing available commands" src="https://github.com/user-attachments/assets/64d3da3d-61ce-47a5-af08-70ef50a66762" />
 
-#Commands  :  
-add  :  To add expenses. Required arugemts - discription (use '_' insted of space),amount.
+### Getting help on the arguments for the `add` command
 
-<img width="961" height="98" alt="image" src="https://github.com/user-attachments/assets/5662abe5-0f64-4694-8823-931b82acda70" />
+<img width="962" height="192" alt="Help output for the add command arguments" src="https://github.com/user-attachments/assets/a86e6ec3-46d4-4e14-806d-939b4e54c918" />
 
-update  :  To update exixting record. Required arguments - id,discription (use '_' insted of space),amount.
+## Commands
 
-<img width="960" height="53" alt="image" src="https://github.com/user-attachments/assets/c8be7955-cf01-40a5-9341-efdbafccd574" />
+### `add`
 
-delete  :  To delete existing record. Required argument - id.
+Add an expense.
 
-<img width="955" height="48" alt="image" src="https://github.com/user-attachments/assets/28ae14f4-536f-4c15-8715-9c48953df196" />
+**Required arguments:** `description` (use `_` instead of space), `amount`
 
-show  :  To get all records. No requird argument.
+<img width="961" height="98" alt="Example of using the add command" src="https://github.com/user-attachments/assets/5662abe5-0f64-4694-8823-931b82acda70" />
 
-<img width="960" height="61" alt="image" src="https://github.com/user-attachments/assets/83cd7170-081a-471b-ba56-b1fa28373020" />
+### `update`
 
-summary  :  To get summary of all records. No required argument.
-(After adding dummy records)
+Update an existing record.
 
-<img width="963" height="46" alt="image" src="https://github.com/user-attachments/assets/a0a07b1e-466d-41b9-925b-86d6f0af9dbc" />
+**Required arguments:** `id`, `description` (use `_` instead of space), `amount`
 
-monthly-summary : To get summary of perticular month. Required argument - Month(in MM).
+<img width="960" height="53" alt="Example of using the update command" src="https://github.com/user-attachments/assets/c8be7955-cf01-40a5-9341-efdbafccd574" />
 
-<img width="963" height="49" alt="image" src="https://github.com/user-attachments/assets/1aa46d8a-2045-4fd1-a969-b436dc346f46" />
+### `delete`
 
-export  :  To export records in form of '.csv' file to a specific path. Required argument - path.
+Delete an existing record.
 
-<img width="960" height="49" alt="image" src="https://github.com/user-attachments/assets/833b804f-2818-4def-991e-88a562ffc8af" />
+**Required argument:** `id`
 
-open-csv  :  To open records in '.csv' file directly without exporting to specific location. No required argument.
+<img width="955" height="48" alt="Example of using the delete command" src="https://github.com/user-attachments/assets/28ae14f4-536f-4c15-8715-9c48953df196" />
 
-<img width="963" height="33" alt="image" src="https://github.com/user-attachments/assets/2f50763f-b699-459a-b55e-a620e7713e35" />
+### `show`
 
-<img width="703" height="500" alt="image" src="https://github.com/user-attachments/assets/26de5613-2656-487d-a35b-3a2199fe16c1" />
+Get all records.
+
+**Required argument:** None
+
+<img width="960" height="61" alt="Example of using the show command" src="https://github.com/user-attachments/assets/83cd7170-081a-471b-ba56-b1fa28373020" />
+
+### `summary`
+
+Get a summary of all records.
+
+**Required argument:** None
+
+*(After adding dummy records)*
+
+<img width="963" height="46" alt="Example of using the summary command" src="https://github.com/user-attachments/assets/a0a07b1e-466d-41b9-925b-86d6f0af9dbc" />
+
+### `monthly-summary`
+
+Get a summary of a particular month.
+
+**Required argument:** `month` (in `MM` format)
+
+<img width="963" height="49" alt="Example of using the monthly-summary command" src="https://github.com/user-attachments/assets/1aa46d8a-2045-4fd1-a969-b436dc346f46" />
+
+### `export`
+
+Export records as a `.csv` file to a specific path.
+
+**Required argument:** `path`
+
+<img width="960" height="49" alt="Example of using the export command" src="https://github.com/user-attachments/assets/833b804f-2818-4def-991e-88a562ffc8af" />
+
+### `open-csv`
+
+Open records as a `.csv` file directly, without exporting to a specific location.
+
+**Required argument:** None
+
+<img width="963" height="33" alt="Example of using the open-csv command" src="https://github.com/user-attachments/assets/2f50763f-b699-459a-b55e-a620e7713e35" />
+
+<img width="703" height="500" alt="CSV file opened showing expense records" src="https://github.com/user-attachments/assets/26de5613-2656-487d-a35b-3a2199fe16c1" />
