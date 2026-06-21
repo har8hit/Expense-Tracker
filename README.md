@@ -1,5 +1,5 @@
 # Expense Tracker
-Project url = <https://github.com/har8hit/Expense-Tracker.git>
+Project url = <https://github.com/har8hit/Expense-Tracker.git> .
 Expense Tracker is a CLI application to keep records of expenses.
 
 - **Programming Language:** Python
